@@ -24,7 +24,7 @@ header img {
 }
 header h1 {
   font-size: 50px;
-  color: green;
+  color: rgb(80, 66, 65);
   cursor: pointer;
 }
 main {
@@ -43,7 +43,7 @@ input {
   display: none;
 }
 input ~ label {
-  background: green;
+  background: rgb(109, 14, 105);
   height: 50px;
   color: white;
   padding: 16px;
@@ -67,8 +67,9 @@ input:checked ~ label ~ .content {
   display: none;
   clear: both;
   transition: all 0.5s ease;
-  border: 3px solid rgb(50, 25, 172);
+  border: 3px solid rgb(205, 230, 20);
   border-radius: 10px;
+  background: rgb(85, 40, 133);
 }
 .content_answer {
   display: flex;
@@ -76,7 +77,6 @@ input:checked ~ label ~ .content {
   justify-content: center;
   padding: 50px 20px;
   align-items: center;
-  background: rgb(32, 150, 101);
   margin-top: 20px;
   border-radius: 20px;
 }
@@ -210,23 +210,4 @@ input:checked ~ label {
     margin-top: 30px;
     max-width: 100%;
   }
-}
-#btn_next {
-  padding: 20px;
-  cursor: pointer;
-  background: rgb(19, 160, 151);
-  border: none;
-  border-radius: 10px;
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
-}
-#btn_next a {
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
-}
-#btn_next:hover {
-  background: rgb(19, 123, 163);
-  transition: all 0.5s ease-in-out;
 }

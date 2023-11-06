@@ -151,12 +151,111 @@ function task16() {
   alert("natija: " + birlar + "" + yuzlar + "" + onlar);
   console.log("natija " + birlar + "" + yuzlar + "" + onlar);
 }
+function task17() {
+  let son = +prompt("Uch xonali son kiriting");
+  let birlar = son % 10;
+  let x = son % 100;
+  let onlar = (x - birlar) / 10;
+  let yuzlar = (son - x) / 100;
+
+  alert("Natija:" + yuzlar + "" + birlar + "" + onlar);
+}
+function task18() {
+  let son = +prompt("Uch xonali son kiriting");
+  let birlar = son % 10;
+  let x = son % 100;
+  let onlar = (x - birlar) / 10;
+  let yuzlar = (son - x) / 100;
+
+  alert("Natija:" + onlar + "" + yuzlar + "" + birlar);
+}
+function task19() {
+  let son = +prompt("to'rt xonali son kiriting");
+  let birlar = son % 10;
+  let onlar = ((son % 100) - birlar) / 10;
+  let yuzlar = ((son % 1000) - (son % 100)) / 100;
+  let minglar = ((son % 10000) - (son % 1000)) / 1000;
+  alert("Natija:" + birlar + "" + onlar + "" + yuzlar + "" + minglar);
+}
+function task20() {
+  let son = +prompt("999 dan katta son kiriting: ");
+  let birlar = son % 10;
+  let butun = son / 10;
+  let qoldiq = son % 10;
+  let onlar = ((son % 100) - birlar) / 10;
+  alert(
+    "butuni: " +
+      butun +
+      "\n Qoldiq: " +
+      qoldiq +
+      " \nonlik xonasidagi raqam: " +
+      onlar
+  );
+}
+function task21() {
+  let son = +prompt("999 dan katta son kiriting: ");
+  let butun = son / 10;
+  let qoldiq = son % 10;
+  let yuzlar = ((son % 1000) - (son % 100)) / 100;
+
+  alert(
+    "butuni: " +
+      butun +
+      "\n Qoldiq: " +
+      qoldiq +
+      "\nyuzalar xonasidagi raqam: " +
+      yuzlar
+  );
+}
+function task22() {
+  let son = +prompt("999 dan katta son kiriting: ");
+  let butun = son / 10;
+  let qoldiq = son % 10;
+  let minglar = ((son % 10000) - (son % 1000)) / 1000;
+
+  alert(
+    "butuni: " +
+      butun +
+      "\n Qoldiq: " +
+      qoldiq +
+      "\nyuzalar xonasidagi raqam: " +
+      minglar
+  );
+}
+function task23() {
+  let sekund = +prompt("sekundni kiriting:");
+  let minut = sekund / 60;
+
+  alert("natija minutda:" + minut);
+}
+function task24() {
+  let sekund = +prompt("sekundni kiriting:");
+  let soat = sekund / 3600;
+
+  alert("natija soatda:" + soat);
+}
+function task25() {
+  let son = +prompt("sekundni kiriting:");
+  let sekund = son % 60;
+  let minut = ((son % 3600) - sekund) / 60;
+  let soat = (son - (son % 3600)) / 3600;
+  alert(+minut + " minut" + "\n" + sekund + " sekund");
+}
+function task26() {
+  let son = +prompt("sekundni kiriting:");
+  let sekund = son % 60;
+  let minut = ((son % 3600) - sekund) / 60;
+  let soat = (son - (son % 3600)) / 3600;
+  alert(+soat + " soat\n" + "\n" + sekund + " sekund");
+}
 function task27() {
   let son = +prompt("sekundni kiriting:");
   let sekund = son % 60;
   let minut = ((son % 3600) - sekund) / 60;
   let soat = (son - (son % 3600)) / 3600;
-  alert("soat:" + soat);
+  alert(
+    +soat + " soat\n" + "\n" + minut + " minut" + "\n" + sekund + " sekund"
+  );
 }
 function task28() {
   let Jasur_buyi = 1.8;
