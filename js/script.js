@@ -323,7 +323,8 @@ function if3() {
     alert("NuN NuN NuN NuN NuN NuN NuN NuN ");
   } else if (l == login && p == parol) {
     alert("Muvaffaqiyatli");
-    window.location.href = "https://task-rho-six.vercel.app/";
+    window.location.href =
+      "https://kun.uz/news/2023/11/09/dunyo-siyosiy-arxitekturasi-tom-manoda-ozgarmoqda-shavkat-mirziyoyev";
   } else {
     alert("Notug'ri parol yoki login");
   }
