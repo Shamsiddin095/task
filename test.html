@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #toggleButton {
+        cursor: pointer;
+      }
+      #hiddenParagraph {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleButton" onclick="toggleParagraph()">Bosing</button>
+    <p id="hiddenParagraph">Bu paragraf pastda ochiladi</p>
+
+    <script>
+      function toggleParagraph() {
+        var paragraph = document.getElementById("hiddenParagraph");
+        paragraph.style.display =
+          paragraph.style.display === "none" || paragraph.style.display === ""
+            ? "block"
+            : "none";
+      }
+    </script>
+  </body>
+</html>

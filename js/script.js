@@ -269,3 +269,62 @@ function task28() {
   alert("Jasur BMI =" + BMIjasur + "/n Navruz BMI = " + BMInavruz);
   alert(BMIjasur >= BMInavruz);
 }
+
+function home27() {
+  var paragraph = document.getElementById("cont_27");
+  paragraph.style.display =
+    paragraph.style.display === "none" || paragraph.style.display === ""
+      ? "block"
+      : "none";
+}
+function home8() {
+  var paragraph = document.getElementById("last");
+  paragraph.style.display =
+    paragraph.style.display === "none" || paragraph.style.display === ""
+      ? "block"
+      : "none";
+}
+function if1() {
+  let num = +prompt("son kiriting:");
+  let natija;
+
+  if (num > 0) {
+    natija = 1;
+  } else if (num < 0) {
+    natija = -1;
+  } else {
+    natija = 0;
+  }
+  alert("qiymat:" + natija);
+}
+function if2() {
+  let a = +prompt("a son = ");
+  let b = +prompt("b son = ");
+
+  yigindi = a + b;
+  let natija;
+  if (yigindi < 4) {
+    natija = "Below";
+  } else {
+    natija = " Over";
+  }
+  alert("natija:" + natija);
+}
+function if3() {
+  alert("Ro'yhatdan o'tish uchun login parol kiriting:");
+  let login = prompt("Login kiriting:");
+  let parol = +prompt(" 4 talik son parol kiriting :");
+  alert("Ro'yhatdan o'tdingiz:");
+  alert("Parol va login kiriting:");
+  let l = prompt("loginingiz:");
+  let p = +prompt("parolingiz");
+
+  if (!l || !p) {
+    alert("NuN NuN NuN NuN NuN NuN NuN NuN ");
+  } else if (l == login && p == parol) {
+    alert("Muvaffaqiyatli");
+    window.location.href = "https://task-rho-six.vercel.app/";
+  } else {
+    alert("Notug'ri parol yoki login");
+  }
+}
